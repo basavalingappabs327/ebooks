@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>E-Books</header>
+<div class="wrap">
+  <div class="controls">
+    <select id="type"><option value="">All types</option></select>
+    <input id="search" type="search" placeholder="Search by book name or author…">
+  </div>
+  <div class="info"><span id="count"></span><div class="pager" id="pagerTop"></div></div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Author</th><th>Name</th><th>Type</th></tr></thead>
+      <tbody id="body"><tr><td colspan="3" class="loading">Loading books…</td></tr></tbody>
+    </table>
+  </div>
+  <div class="info"><span></span><div class="pager" id="pagerBottom"></div></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
