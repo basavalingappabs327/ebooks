@@ -41,7 +41,7 @@ function render(){
   $('body').innerHTML = slice.length ? slice.map(b => `
     <tr>
       <td>${esc(b.author)}</td>
-      <td>${b.download ? `<a href="${esc(b.download)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(b.name)}</td>
+      <td>${b.download ? `<a href="${esc(b.download)}" target="_blank" rel="noopener">${esc(b.name)}</a>` : esc(b.name)}<div class="sub-author">${esc(b.author)}</div></td>
       <td><span class="tag" style="--h:${typeHue[b.type] ?? 210}">${esc(b.type)}</span></td>
     </tr>`).join('')
     : '<tr><td colspan="3" class="empty">No books found.</td></tr>';
