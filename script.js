@@ -28,7 +28,7 @@ function applyFilters(){
   const q = $('search').value.trim().toLowerCase();
   filtered = books.filter(b =>
     (!t || b.type === t) &&
-    (!q || (b.name + ' ' + b.author).toLowerCase().includes(q)));
+    (!q || (b.name + ' ' + b.author + ' ' + b.type).toLowerCase().includes(q)));
   page = 1;
   render();
 }
