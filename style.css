@@ -8,6 +8,28 @@ header{background:var(--head);color:#fff;padding:14px 20px;font-size:20px;font-w
 select,input{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:15px}
 select{min-width:200px}
 input{flex:1;min-width:200px}
+#search{
+  border:2px solid #e53935;
+  background:#fff5f5;
+  color:var(--text);
+}
+#search:focus{
+  outline:none;
+  border-color:#c62828;
+  box-shadow:0 0 0 3px rgba(229,57,53,.25);
+  background:#fff;
+}
+@media (prefers-color-scheme:dark){
+  #search{
+    border-color:#ef5350;
+    background:#2a1f1f;
+  }
+  #search:focus{
+    border-color:#ff6b6b;
+    box-shadow:0 0 0 3px rgba(239,83,80,.3);
+    background:var(--card);
+  }
+}
 .info{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;margin:6px 2px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 table{width:100%;border-collapse:collapse}
